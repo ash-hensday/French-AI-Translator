@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "My buddy Serge",
+  "version": "1.0",
+  "description": "translate french to english with grammar explanation",
+  "icons":{
+    "16": "serge_gainsbourg16.png",
+    "48": "serge_gainsbourg48.png",
+    "128": "serge_gainsbourg128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab",
+    "notifications",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "serge_gainsbourg_png.png"
+  }
+}
